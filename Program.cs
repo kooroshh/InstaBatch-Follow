@@ -12,7 +12,7 @@ namespace InstaBatch_Follow
     class Program
     {
         static List<UserStruct> mUsers = new List<UserStruct>();
-        private static string mPattern = @"([a-zA-Z0-9_\-\.]{3,40}):([a-zA-Z0-9_\-\.]{5,40})";
+        private static string mPattern = @"([a-zA-Z0-9_\-\.]{3,40}):([a-zA-Z0-9_\-\.\@\!\:\#\$\%\^\&\*\(\)\[\]\+\|\~]{5,40})";
         private static int mDelay = 500;
         private static int mThreads = 1;
         private static string mTarget = "", mInput = "";
